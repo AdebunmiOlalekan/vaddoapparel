@@ -1,0 +1,657 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c0504d;
+}
+
+.trans {
+    background-color: #7F563F;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 70px;
+    z-index: 999;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.trans p {
+    flex-shrink: 0;
+    display: inline-block;
+    font-family: cursive;
+    font-size: 16px;
+    padding-right: 30px;
+    animation: move 24s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.hero {
+    min-height: 850px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 42% 48%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background: #B29889;
+    padding: 50px 5%;
+}
+
+
+.right-img {
+    width: 100%;
+    min-height: 650px;
+    background-image: url("images/images-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 0 0 20px;
+}
+
+.hero-text {
+    min-height: 650px;
+    width: 100%;
+    background-color: rgb(231, 221, 210);
+    border-radius: 0 20px 20px 0;
+    padding: 45px 35px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.para-text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 15px 10px;
+    color: black;
+    font-weight: 400;
+}
+
+/* CONTACT INFORMATION */
+.contact-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 20px 10px;
+}
+
+.mail,
+.phone,
+.whatsapp,
+.add {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.mail i,
+.phone i,
+.whatsapp i,
+.add i {
+    font-size: 20px;
+    color: #bd927b;
+    margin-top: 3px;
+    min-width: 22px;
+}
+
+.mailF,
+.phoneN,
+.whatsappN,
+.addr {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.mail-add,
+.phon,
+.whats,
+.add-ful {
+    color: rgb(178, 152, 137);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.mail-add:hover,
+.phon:hover,
+.whats:hover {
+    color: #7F563F;
+}
+
+/* SOCIAL MEDIA ICONS */
+.insta-face {
+    min-height: 70px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.insta-face i {
+    font-size: 35px;
+    cursor: pointer;
+    color: black;
+    padding-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.insta-face i:hover {
+    color: #bd927b;
+}
+
+
+footer {
+    min-height: 350px;
+    background-color: rgb(211, 204, 189);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 30px;
+    gap: 30px;
+}
+
+
+.off-info {
+    min-height: 250px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.info {
+    height: 130px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.inst {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.inst i {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.inst i:hover {
+    color: #bd927b;
+}
+
+.acc {
+    min-height: 250px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    right: 70px;
+}
+
+.con {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.adding {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.location-logo {
+    min-width: 30px;
+    padding-top: 3px;
+}
+
+.adding i,
+.mail-logo i {
+    font-size: 20px;
+    color: #bd927b;
+}
+
+.address-class {
+    flex: 1;
+}
+
+.address {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+}
+
+.addful {
+     font-size: 14px;
+    color: black;
+    font-weight: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 5px;
+    line-height: 1.6;
+}
+
+
+.mailin {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.mail-logo {
+    min-width: 30px;
+    padding-top: 3px;
+}
+
+.mailadd {
+    flex: 1;
+}
+
+.mailin .mail-add {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+    text-decoration: none;
+}
+.numbe{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+.numbe-logo {
+    min-width: 30px;
+    padding-top: 3px;
+    color: #bd927b;
+}
+.phonenumbe{
+   font-size: 14px;
+    color: black;
+    font-weight: bold;
+    font-family:arial;
+    cursor: pointer;
+  
+}
+.product{
+   min-height: 200px;
+    width: 15%;
+    right: 120px;
+    color: black;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    justify-items: center;
+    font-weight: lighter;
+}
+
+.producthead{
+  font-size: 17px;
+    color: black;
+    font-weight: 500;
+    font-family: arial;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     position: relative;
+     top: 30px;
+   
+}
+
+.sitemap{
+  height: 40vh;
+  width: 20vw;
+  position: relative;
+  right: 100px;
+  color: black;
+  justify-items: center;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sitemaphead{
+  height: 20vh;
+  width: 10vw;
+  font-size: 17px;
+    color: black;
+    font-weight: 500;
+    font-family: arial;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   position: relative;
+     top: 40px;
+}
+.sitemaphead a{
+  text-decoration: none;
+  color: black;
+}
+.designer{
+    height: 15vh;
+    width: 100vw;
+    background: rgb(73, 73, 210);
+    justify-items: end;
+    padding: 40px ;
+
+}
+
+/* ========== LARGE TABLETS / SMALL LAPTOPS (≤ 1100px) ========== */
+@media (max-width: 1100px) {
+    header {
+        padding: 0 25px;
+    }
+
+    nav {
+        gap: 22px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        min-height: auto;
+        padding: 40px 4%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .off-info {
+        width: 45%;
+        margin-left: 0;
+    }
+
+    .acc {
+        width: 45%;
+        right: 0;
+    }
+
+    .product {
+        width: 40%;
+        right: 0;
+        justify-items: start;
+    }
+
+    .sitemap {
+        width: 40%;
+        height: auto;
+        right: 0;
+        justify-items: start;
+    }
+
+    .sitemaphead {
+        width: auto;
+        height: auto;
+    }
+}
+
+/* ========== TABLETS (≤ 900px) ========== */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 5%;
+    }
+
+    /* image on top, text below */
+    .right-img {
+        order: -1;
+        min-height: 380px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .hero-text {
+        min-height: auto;
+        border-radius: 0 0 20px 20px;
+        padding: 30px 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding-left: 0;
+    }
+
+    .para-text {
+        padding: 15px 0;
+    }
+
+    .contact-info {
+        padding: 20px 0;
+    }
+}
+
+/* ========== MOBILE (≤ 600px) ========== */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 10px 15px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        position: static;          /* avoids tall sticky header eating the screen */
+    }
+
+    .logo {
+        height: 44px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .trans {
+        top: 0;
+        height: 40px;
+    }
+
+    .trans p {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 20px 4%;
+    }
+
+    .right-img {
+        min-height: 280px;
+    }
+
+    .hero-text {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding-top: 10px;
+    }
+
+    .para-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .mailF,
+    .phoneN,
+    .whatsappN,
+    .addr,
+    .mail-add,
+    .phon,
+    .whats,
+    .add-ful {
+        font-size: 14px;
+    }
+
+    .insta-face i {
+        font-size: 30px;
+    }
+
+    /* FOOTER: single column */
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .off-info,
+    .acc,
+    .product,
+    .sitemap {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        position: static;
+        right: auto;
+        margin: 0;
+        justify-items: start;
+    }
+
+    .info {
+        height: 100px;
+    }
+
+    .con {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .producthead,
+    .sitemaphead {
+        position: static;
+        top: auto;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .mailin .mail-add,
+    .phonenumbe,
+    .addful {
+        overflow-wrap: anywhere;
+    }
+
+    .designer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* ========== SMALL PHONES (≤ 400px) ========== */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .right-img {
+        min-height: 220px;
+    }
+
+    nav {
+        gap: 6px 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}

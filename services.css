@@ -1,0 +1,1160 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c0504d;
+}
+
+.trans {
+    background-color: #7F563F;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 70px;
+    z-index: 999;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.trans p {
+    flex-shrink: 0;
+    display: inline-block;
+    font-family: cursive;
+    font-size: 16px;
+    padding-right: 30px;
+    animation: move 24s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+.service-hero{
+    height: 110vh;
+    width: 100vw;
+    background: #fffaf7;
+}
+.service-page{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   justify-content: space-around;
+   padding-top: 10px;
+   padding-left: 30px;
+    box-sizing: border-box;
+    
+}
+.service-hero h1{
+  color: #651b55;
+  padding-left: 44%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.service-hero p{
+  color: #651b55;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 37%;
+}
+.servic1{
+  height: 250px;
+  width: 28vw;
+
+}
+.servic01{
+   height: 200px;
+  width: 28vw;
+  background-image: url(images/agbada.jfif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 15px;
+  
+}
+.servic1 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic2{
+  height: 250px;
+  width: 28vw;
+ 
+}
+.servic02{
+    height: 200px;
+  width: 28vw;
+  background-image: url(images/mannequin.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+
+}
+.servic2 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic3{
+    height: 250px;
+  width: 28vw;
+}
+.servic03{
+    height: 200px;
+  width: 28vw;
+  object-fit: cover;
+  background-image: url(images/fashion.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+
+}
+
+.servic3 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic4{
+    height: 250px;
+  width: 28vw;
+}
+.servic04{
+    height: 200px;
+  width: 28vw;
+  border-radius: 15px;
+  background-image: url(images/traditional.jfif);
+  background-size: cover;
+
+}
+.servic4 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic5 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic5{
+    height: 250px;
+  width: 28vw;
+}
+.servic05{
+    height: 200px;
+  width: 28vw;
+  background-image: url(images/alteration.jfif);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+
+}
+.servic5 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic6{
+    height: 250px;
+  width: 28vw;
+}
+.servic06{
+  height: 200px;
+  width: 28vw;
+  border-radius: 15px;
+  background-image: url(images/vintage.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.servic6 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+
+.hero-stylee{
+  height: 40vh;
+  width: 100vw;
+  background: #cd97c1;
+  position: relative;
+  top: 30px;
+}
+.hero-stylee h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  color: #651b55;
+  text-align: center;
+  padding: 10px;
+}
+.hero-stylee p{
+  font-family: 20px;
+  font-family: serif;
+  font-weight: bold;
+  color: #651b65;
+  text-align: center;
+}
+button{
+  height: 10vh;
+  width: 18vw;
+  background: #651b65;
+  position: absolute;
+  left: 40%;
+  top:45%;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  color: wheat;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #c0504d;
+  transform: scale(1.05);
+}
+.designer{
+    height: 15vh;
+    width: 100vw;
+    background: rgb(73, 73, 210);
+    justify-items: end;
+    padding: 40px ;
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        padding: 0 25px;
+    }
+
+    nav {
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .service-page {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        width: 100%;
+        padding: 25px;
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .service-hero {
+        height: auto;
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .servic1,
+    .servic2,
+    .servic3,
+    .servic4,
+    .servic5,
+    .servic6 {
+        width: 42vw;
+        height: auto;
+    }
+
+    .servic01,
+    .servic02,
+    .servic03,
+    .servic04,
+    .servic05,
+    .servic06 {
+        width: 100%;
+        height: 220px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .service-hero h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .service-hero p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .hero-stylee {
+        width: 100%;
+    }
+
+    button {
+        width: 25vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .designer {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .trans {
+        height: 40px;
+        width: 100%;
+        top: 0;
+    }
+
+    .trans p {
+        font-size: 13px;
+    }
+
+    .service-hero {
+        height: auto;
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    .service-hero h1 {
+        font-size: 28px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .service-hero p {
+        font-size: 17px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .service-page {
+        height: auto;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 25px;
+        padding: 25px 15px;
+    }
+
+    .servic1,
+    .servic2,
+    .servic3,
+    .servic4,
+    .servic5,
+    .servic6 {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+    }
+
+    .servic01,
+    .servic02,
+    .servic03,
+    .servic04,
+    .servic05,
+    .servic06 {
+        width: 100%;
+        height: 190px;
+    }
+
+    .servic1 h2,
+    .servic2 h2,
+    .servic3 h2,
+    .servic4 h2,
+    .servic5 h2,
+    .servic6 h2 {
+        font-size: 19px;
+    }
+
+    .hero-stylee {
+        height: 260px;
+        width: 100%;
+        top: 0;
+        padding: 20px 15px;
+    }
+
+    .hero-stylee h1 {
+        font-size: 25px;
+    }
+
+    .hero-stylee p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    button {
+        height: 50px;
+        width: 35%;
+        left: 50%;
+        top: 65%;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        transform: translateX(-50%) scale(1.05);
+    }
+
+    .designer {
+        height: auto;
+        min-height: 100px;
+        width: 100%;
+        padding: 25px 15px;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .trans {
+        height: 35px;
+    }
+
+    .trans p {
+        font-size: 12px;
+        padding-right: 20px;
+    }
+
+    .service-hero {
+        padding: 20px 12px;
+    }
+
+    .service-hero h1 {
+        font-size: 23px;
+    }
+
+    .service-hero p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .service-page {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 20px 10px;
+    }
+
+    .servic1,
+    .servic2,
+    .servic3,
+    .servic4,
+    .servic5,
+    .servic6 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .servic01,
+    .servic02,
+    .servic03,
+    .servic04,
+    .servic05,
+    .servic06 {
+        height: 200px;
+        width: 100%;
+    }
+
+    .servic1 h2,
+    .servic2 h2,
+    .servic3 h2,
+    .servic4 h2,
+    .servic5 h2,
+    .servic6 h2 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .hero-stylee {
+        height: 250px;
+        padding: 20px 10px;
+    }
+
+    .hero-stylee h1 {
+        font-size: 21px;
+    }
+
+    .hero-stylee p {
+        font-size: 13px;
+    }
+
+    button {
+        width: 65%;
+        max-width: 230px;
+        height: 48px;
+        top: 65%;
+        font-size: 15px;
+    }
+
+    .designer {
+        padding: 20px 10px;
+        min-height: 90px;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    header {
+        padding: 8px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .service-hero h1 {
+        font-size: 20px;
+    }
+
+    .service-hero p {
+        font-size: 13px;
+    }
+
+    .service-page {
+        padding: 15px 8px;
+    }
+
+    .servic01,
+    .servic02,
+    .servic03,
+    .servic04,
+    .servic05,
+    .servic06 {
+        height: 170px;
+    }
+
+    .servic1 h2,
+    .servic2 h2,
+    .servic3 h2,
+    .servic4 h2,
+    .servic5 h2,
+    .servic6 h2 {
+        font-size: 16px;
+    }
+
+    .hero-stylee h1 {
+        font-size: 19px;
+    }
+
+    .hero-stylee p {
+        font-size: 12px;
+    }
+
+    button {
+        width: 75%;
+        font-size: 14px;
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c0504d;
+}
+
+.trans {
+    background-color: #7F563F;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 70px;
+    z-index: 999;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.trans p {
+    flex-shrink: 0;
+    display: inline-block;
+    font-family: cursive;
+    font-size: 16px;
+    padding-right: 30px;
+    animation: move 24s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+.service-hero{
+    height: 110vh;
+    width: 100vw;
+    background: #fffaf7;
+}
+.service-page{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   justify-content: space-around;
+   padding-top: 10px;
+   padding-left: 30px;
+    box-sizing: border-box;
+    
+}
+.service-hero h1{
+  color: #651b55;
+  padding-left: 44%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.service-hero p{
+  color: #651b55;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 37%;
+}
+.servic1{
+  height: 250px;
+  width: 28vw;
+
+}
+.servic01{
+   height: 200px;
+  width: 28vw;
+  background-image: url(images/agbada.jfif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 15px;
+  /* border: 2px solid black; */
+}
+.servic1 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic2{
+  height: 250px;
+  width: 28vw;
+ 
+}
+.servic02{
+    height: 200px;
+  width: 28vw;
+  background-image: url(images/mannequin.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  /* border: 2px solid black; */
+}
+.servic2 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic3{
+    height: 250px;
+  width: 28vw;
+}
+.servic03{
+    height: 200px;
+  width: 28vw;
+  object-fit: cover;
+  background-image: url(images/fashion.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  /* border: 2px solid black; */
+}
+
+.servic3 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic4{
+    height: 250px;
+  width: 28vw;
+}
+.servic04{
+    height: 200px;
+  width: 28vw;
+  border-radius: 15px;
+  background-image: url(images/traditional.jfif);
+  background-size: cover;
+  /* border: 2px solid black; */
+}
+.servic4 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic5 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic5{
+    height: 250px;
+  width: 28vw;
+}
+.servic05{
+    height: 200px;
+  width: 28vw;
+  background-image: url(images/alteration.jfif);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  /* border: 2px solid black; */
+}
+.servic5 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+.servic6{
+    height: 250px;
+  width: 28vw;
+}
+.servic06{
+  height: 200px;
+  width: 28vw;
+  border-radius: 15px;
+  background-image: url(images/vintage.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 2px solid black; */
+}
+.servic6 h2{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  color: #651b55;
+  cursor: pointer;
+}
+
+.hero-stylee{
+  height: 40vh;
+  width: 100vw;
+  background: #cd97c1;
+  position: relative;
+  top: 30px;
+}
+.hero-stylee h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  color: #651b55;
+  text-align: center;
+  padding: 10px;
+}
+.hero-stylee p{
+  font-family: 20px;
+  font-family: serif;
+  font-weight: bold;
+  color: #651b65;
+  text-align: center;
+}
+button{
+  height: 10vh;
+  width: 18vw;
+  background: #651b65;
+  position: absolute;
+  left: 40%;
+  top:45%;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  color: wheat;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #c0504d;
+  transform: scale(1.05);
+}
+.designer{
+    height: 15vh;
+    width: 100vw;
+    background: rgb(73, 73, 210);
+    justify-items: end;
+    padding: 40px ;
+
+}
+
+/* ===== RESPONSIVE STYLES: paste at the very bottom of your CSS ===== */
+
+/* ---------- Base fixes (all screens) ---------- */
+.service-hero,
+.service-page,
+.hero-stylee,
+.designer {
+    width: 100%;          /* 100vw causes sideways scroll */
+}
+
+/* Make every card image fill its card and scale properly */
+.servic01, .servic02, .servic03,
+.servic04, .servic05, .servic06 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Cards fill their grid cell instead of using fixed vw widths */
+.servic1, .servic2, .servic3,
+.servic4, .servic5, .servic6 {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+.servic01, .servic02, .servic03,
+.servic04, .servic05, .servic06 {
+    width: 100%;
+}
+
+/* ---------- Laptops (≤ 1200px) ---------- */
+@media (max-width: 1200px) {
+    header { padding: 0 25px; }
+    nav { gap: 24px; }
+
+    .service-hero { height: auto; padding-bottom: 20px; }
+    .service-hero h1 { padding-left: 0; text-align: center; }
+    .service-hero p { padding-left: 0; text-align: center; font-size: 22px; }
+
+    .service-page {
+        height: auto;
+        padding: 20px 30px;
+        gap: 25px;
+        justify-items: center;
+    }
+}
+
+/* ---------- Tablets (≤ 992px) ---------- */
+@media (max-width: 992px) {
+    nav { gap: 18px; }
+    nav a { font-size: 14px; }
+
+    /* 3 columns -> 2 columns */
+    .service-page {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .servic01, .servic02, .servic03,
+    .servic04, .servic05, .servic06 { height: 220px; }
+
+    .servic1 h2, .servic2 h2, .servic3 h2,
+    .servic4 h2, .servic5 h2, .servic6 h2 { font-size: 22px; }
+
+    /* Call-to-action banner: stack content and centre the button */
+    .hero-stylee {
+        height: auto;
+        top: 0;
+        margin-top: 30px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    button {
+        position: static;
+        height: 55px;
+        width: 100%;
+        max-width: 260px;
+        margin-top: 10px;
+    }
+}
+
+/* ---------- Large phones (≤ 768px) ---------- */
+@media (max-width: 768px) {
+    /* header grows taller, so stop it being sticky and stack it */
+    header {
+        position: relative;
+        height: auto;
+        min-height: 70px;
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo { height: 45px; }
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+    nav a { font-size: 13px; }
+
+    .trans { top: 0; height: 40px; }
+    .trans p { font-size: 13px; animation-duration: 18s; }
+
+    .service-hero { padding: 25px 15px 10px; }
+    .service-hero h1 { font-size: 28px; }
+    .service-hero p { font-size: 17px; line-height: 1.5; }
+
+    .service-page { padding: 20px 10px; gap: 20px; }
+
+    .servic01, .servic02, .servic03,
+    .servic04, .servic05, .servic06 { height: 190px; }
+
+    .servic1 h2, .servic2 h2, .servic3 h2,
+    .servic4 h2, .servic5 h2, .servic6 h2 { font-size: 19px; }
+
+    .hero-stylee h1 { font-size: 25px; }
+    .hero-stylee p { font-size: 15px; line-height: 1.6; }
+    button { font-size: 16px; height: 50px; }
+
+    .designer {
+        height: auto;
+        min-height: 100px;
+        padding: 25px 15px;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* ---------- Small phones (≤ 576px) ---------- */
+@media (max-width: 576px) {
+    /* 2 columns -> 1 column */
+    .service-page {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+    }
+    .servic1, .servic2, .servic3,
+    .servic4, .servic5, .servic6 { max-width: 100%; }
+
+    .servic01, .servic02, .servic03,
+    .servic04, .servic05, .servic06 { height: 210px; }
+
+    .service-hero h1 { font-size: 23px; }
+    .service-hero p { font-size: 15px; }
+
+    .hero-stylee { padding: 30px 15px; }
+    .hero-stylee h1 { font-size: 21px; }
+    .hero-stylee p { font-size: 14px; }
+    button { max-width: 230px; font-size: 15px; }
+}
+
+/* ---------- Very small phones (≤ 380px) ---------- */
+@media (max-width: 380px) {
+    nav a { font-size: 12px; }
+    .logo { height: 38px; }
+    .service-hero h1 { font-size: 20px; }
+    .service-hero p { font-size: 13px; }
+    .servic01, .servic02, .servic03,
+    .servic04, .servic05, .servic06 { height: 180px; }
+    .servic1 h2, .servic2 h2, .servic3 h2,
+    .servic4 h2, .servic5 h2, .servic6 h2 { font-size: 17px; }
+    .hero-stylee h1 { font-size: 19px; }
+    button { width: 80%; font-size: 14px; }
+}

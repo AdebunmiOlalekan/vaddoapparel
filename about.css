@@ -1,0 +1,698 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #DFDBD2;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c0504d;
+    text-decoration: underline;
+
+}
+
+.trans {
+    background-color: #7F563F;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 70px;
+    z-index: 999;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.trans p {
+    flex-shrink: 0;
+    display: inline-block;
+    font-family: cursive;
+    font-size: 16px;
+    padding-right: 30px;
+    animation: move 24s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.tailor{
+    height: 40vh;
+    width: 100vw;
+   justify-items: center;
+   padding-top: 10px;
+}
+.aboutwritten{
+   height: 30vh;
+   width: 45vw;
+   position: relative;
+   left: 10px;
+}
+.aboutwritten p{
+   font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: black;
+    font-size: 18px;
+    justify-items: center;
+    padding-top: 15px;
+    line-height: 1.7;
+}
+
+.about-section{
+    width: 100vw;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(106, 87, 62);
+    padding: 60px 10%;
+}
+.about-image{
+    width: 100vw;
+    height: 350px;
+    background: green;
+}
+.about-image img{
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+.circle{
+    height: 120px;
+    width: 120px;
+    border: 1px dotted goldenrod;
+    border-radius: 50%;
+    position: absolute;
+    left: 65px;
+    bottom: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.circle h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.section-text{
+     width: 100vw;
+    height: 450px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+   gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.text1{
+     width: 100%;
+    height: 250px;
+    /* background: gray; */
+}
+.text1 h1{
+    font-size: 28px;
+    font-family: georgia, serif;
+    font-weight: normal;
+    line-height: 1.4;
+    color: black;
+}
+.text2{
+     width: 100%;
+    height: 350px;
+    /* background: yellow; */
+}
+.text2 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+.text2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: black;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.last-section{
+     width: 100vw;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+.craft{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+   
+}
+ .material{
+    text-align: center; 
+    height: 20vw;
+    width: 30vw;
+    color: black;
+}
+.material i{
+    font-size: 35px;
+    color: brown;
+}
+
+.material span{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #bd927b;
+    line-height: 1.4;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+}
+.craftsmanship{
+   text-align: center; 
+    height: 20vw;
+    width: 30vw;
+    color: black;
+}
+.craftsmanship i{
+     font-size: 35px;
+    color: brown;
+}
+.craftsmanship span{
+     font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #bd927b;
+    line-height: 1.4;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+}
+.unique{
+    text-align: center; 
+    height: 20vw;
+    width: 30vw;
+    color: black;
+}
+.unique i{
+    font-size: 35px;
+    color: brown;
+}
+.unique span{
+     font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #bd927b;
+    line-height: 1.2;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+}
+.individual{
+    text-align: center; 
+    height: 20vw;
+    width: 30vw;
+    color: black;
+}
+.individual i{
+    font-size: 35px;
+    color: brown;
+}
+.individual span{
+     font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #bd927b;
+    line-height: 1.2;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+}
+
+
+footer {
+    min-height: 300px;
+    background-color: rgb(211, 204, 189);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 30px;
+    gap: 30px;
+}
+
+.off-info {
+    min-height: 250px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.info {
+    height: 130px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.inst {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.inst i {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.inst i:hover {
+    color: #bd927b;
+}
+
+.acc {
+    min-height: 250px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    right: 70px;
+}
+
+.con {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.adding {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.location-logo {
+    min-width: 30px;
+    padding-top: 3px;
+}
+
+.adding i,
+.mail-logo i {
+    font-size: 20px;
+    color: #bd927b;
+}
+
+.address-class {
+    flex: 1;
+}
+
+.address {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+}
+
+.addful {
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 5px;
+    line-height: 1.6;
+}
+
+
+.mailin {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.mail-logo {
+    min-width: 30px;
+    padding-top: 3px;
+}
+
+.mailadd {
+    flex: 1;
+}
+
+.mailin .mail-add {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+    text-decoration: none;
+}
+.numbe{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+.numbe-logo {
+    min-width: 30px;
+    padding-top: 3px;
+    color: #bd927b;
+}
+.phonenumbe{
+   font-size: 14px;
+    color: black;
+    font-weight: bold;
+    font-family:arial;
+    cursor: pointer;
+  
+}
+.product{
+   min-height: 200px;
+    width: 15%;
+    right: 120px;
+    color: black;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    justify-items: center;
+    font-weight: lighter;
+}
+
+.producthead{
+  font-size: 17px;
+    color: black;
+    font-weight: 500;
+    font-family: arial;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     position: relative;
+     top: 30px;
+   
+}
+
+.sitemap{
+  height: 40vh;
+  width: 20vw;
+  position: relative;
+  right: 100px;
+  color: black;
+  justify-items: center;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sitemaphead{
+  height: 20vh;
+  width: 10vw;
+  font-size: 17px;
+    color: black;
+    font-weight: 500;
+    font-family: arial;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   position: relative;
+     top: 40px;
+}
+.sitemaphead a{
+  text-decoration: none;
+  color: black;
+}
+.designer{
+    height: 15vh;
+    width: 100vw;
+    background: rgb(73, 73, 210);
+    justify-items: end;
+    padding: 40px ;
+
+}
+/* ===== RESPONSIVE STYLES (paste at the bottom of your CSS) ===== */
+
+/* Global fixes: 100vw causes sideways scroll, so use 100% */
+img { max-width: 100%; }
+
+.tailor,
+.about-section,
+.about-image,
+.section-text,
+.last-section,
+.designer {
+    width: 100%;
+}
+
+/* ---------- Laptops / small desktops (≤ 1200px) ---------- */
+@media (max-width: 1200px) {
+    header { padding: 0 24px; }
+    nav { gap: 24px; }
+
+    .aboutwritten { width: 60vw; }
+
+    .text1 h1 { font-size: 25px; }
+    .text2 p { font-size: 18px; }
+
+    footer { padding: 40px 20px; gap: 20px; }
+    .off-info { width: 24%; }
+    .acc { width: 40%; right: 40px; }
+    .product { right: 60px; width: 16%; }
+    .sitemap { right: 50px; width: 18vw; }
+}
+
+/* ---------- Tablets (≤ 992px) ---------- */
+@media (max-width: 992px) {
+    body { height: auto; }
+
+    .tailor {
+        height: auto;
+        padding: 20px 20px 10px;
+    }
+    .aboutwritten {
+        height: auto;
+        width: 100%;
+        left: 0;
+    }
+    .aboutwritten p { font-size: 17px; }
+
+    .about-section {
+        height: auto;
+        min-height: 350px;
+        padding: 50px 6%;
+    }
+    .about-image { height: 300px; }
+    .about-image img { height: 300px; object-fit: cover; }
+
+    .section-text {
+        height: auto;
+        padding: 50px 6%;
+    }
+    .text1,
+    .text2 { height: auto; }
+    .text1 h1 { font-size: 24px; }
+
+    /* 4 feature blocks become a 2 x 2 grid */
+    .last-section {
+        height: auto;
+        padding: 50px 6%;
+    }
+    .craft {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+    .material,
+    .craftsmanship,
+    .unique,
+    .individual {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer wraps into two columns */
+    footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .off-info { width: 45%; margin-left: 0; }
+    .acc { width: 45%; right: 0; }
+    .product,
+    .sitemap {
+        width: 45%;
+        right: 0;
+        justify-items: start;
+    }
+    .sitemap { height: auto; }
+    .sitemaphead,
+    .producthead {
+        top: 0;
+        height: auto;
+        width: auto;
+    }
+
+    .designer {
+        height: auto;
+        padding: 25px;
+    }
+}
+
+/* ---------- Large phones (≤ 768px) ---------- */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 10px 16px;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+    .logo { height: 44px; }
+    nav {
+        gap: 8px 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a { font-size: 14px; }
+
+    /* sticky offsets must match the new header height, so stack normally */
+    header { position: relative; }
+    .trans { top: 0; height: 44px; }
+    .trans p { font-size: 14px; animation-duration: 18s; }
+
+    .about-image { height: 240px; }
+    .about-image img { height: 240px; }
+
+    .circle {
+        height: 90px;
+        width: 90px;
+        left: 20px;
+    }
+    .circle h2 { font-size: 16px; }
+
+    .text1 h1 { font-size: 21px; }
+    .text2 h1 { font-size: 22px; }
+    .text2 p { font-size: 16px; }
+
+    .material i,
+    .craftsmanship i,
+    .unique i,
+    .individual i { font-size: 30px; }
+
+    .material span,
+    .craftsmanship span,
+    .unique span,
+    .individual span { font-size: 17px; }
+
+    .con {
+        padding-left: 0;
+        font-size: 18px;
+    }
+}
+
+/* ---------- Small phones (≤ 576px) ---------- */
+@media (max-width: 576px) {
+    .tailor { padding: 15px 16px 5px; }
+    .aboutwritten p { font-size: 15px; line-height: 1.6; }
+
+    .about-section { padding: 40px 5%; min-height: 280px; }
+    .about-image,
+    .about-image img { height: 200px; }
+
+    .section-text,
+    .last-section { padding: 40px 5%; }
+
+    .text1 h1 { font-size: 19px; }
+    .text2 h1 { font-size: 20px; }
+    .text2 p { font-size: 15px; }
+
+    /* feature blocks stack in one column */
+    .craft {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* footer stacks fully */
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+    .off-info,
+    .acc,
+    .product,
+    .sitemap {
+        width: 100%;
+    }
+    .info { height: 100px; }
+    .address { font-size: 16px; }
+    .addful { font-size: 13px; }
+
+    .designer {
+        justify-items: center;
+        padding: 20px 15px;
+    }
+}
+
+/* ---------- Very small phones (≤ 380px) ---------- */
+@media (max-width: 380px) {
+    nav a { font-size: 13px; }
+    .logo { height: 38px; }
+    .text1 h1 { font-size: 17px; }
+    .circle { height: 75px; width: 75px; }
+}
