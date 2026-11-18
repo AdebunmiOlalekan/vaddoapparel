@@ -1,5 +1,5 @@
    function goToHome() {
-        window.location.href = "Vaddo.html";
+        window.location.href = "index.html";
     }
 
     function goToAbout() {

@@ -1,5 +1,5 @@
-   function goToHome() {
-        window.location.href = "Vaddo.html";
+    function goToHome() {
+        window.location.href = "index.html";
     }
 
     function goToAbout() {
@@ -13,7 +13,6 @@
     function goToContact() {
         window.location.href = "contacts.html";
     }
-
   function openFacebook() {
     window.open("https://www.facebook.com/yourusername", "_blank");
 }
